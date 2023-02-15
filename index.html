@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Ecommerce Site</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Poppins Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap - Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="/css/global.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <header class="container-fluid">
+
+        <nav class="d-flex justify-content-end fixed-top">
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="#header">Home</a>
+                <a href="#about-us">About</a>
+                <a href="#product">Products</a>
+                <a href="#contact">Contact</a>
+            </div>
+
+            <!-- Use any element to open the sidenav -->
+            <input type="checkbox" id="navCheck" onclick="if(this.checked){openNav();}else{closeNav();}" class="d-none">
+            <label for="navCheck"><i id="hamburger" class="bi bi-list f-40 me-5"></i></label>
+
+
+        </nav>
+
+
+        <div class="row pt-5 sliders-row" style="min-height: 600px;">
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-6 d-flex flex-column align-items-center justify-content-center mb-5">
+                                    <h1 class="text-light fw-semibold mt-4">Your Favourite</h1>
+                                    <h1 class="text-light fw-semibold mt-4 text-center">Accessories & Electronics
+                                    </h1>
+                                    <p class="text-light text-left mt-4">Lorem, ipsum dolor sit amet consectetur
+                                        adipisicing elit. Vel, eveniet sit. Reiciendis, exercitationem nemo iusto dolor
+                                        repellendus sit ullam perspiciatis quo? Incidunt harum quidem, hic ea suscipit
+                                        nesciunt nisi blanditiis obcaecati, eveniet omnis quo rerum alias repellendus
+                                        nostrum qui quia!</p>
+                                    <button class="btn btn-primary col-12">Read More</button>
+                                </div>
+                                <div class="col-md-6"><img src="images/img-1.png" alt="..." width="100%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-6 d-flex flex-column align-items-center justify-content-center mb-5">
+                                    <h1 class="text-light fw-semibold f-40 mt-4">Your Favorite</h1>
+                                    <h1 class="text-light fw-semibold f-40 mt-4 text-center">Shows and Movies</h1>
+                                    <p class="text-light text-left mt-4">Lorem ipsum dolor sit amet consectetur,
+                                        adipisicing
+                                        elit. Labore in quisquam veritatis debitis rem reprehenderit.</p>
+                                    <button class="btn btn-primary col-12">Read More</button>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <img src="images/img-1.png" alt="..." width="100%">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleSlidesOnly"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleSlidesOnly"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+        <div class="container products">
+            <div class="row d-flex justify-content-evenly">
+                <div class="col-lg-4 text-center">
+                    <div class="box">
+                        <a href="">
+                            <i class="bi bi-bag f-40"></i>
+                            <h1>Accesories</h1>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio
+                                aperiam
+                                aliquid architecto soluta voluptatum esse.</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 text-center">
+                    <div class="box">
+                        <a href="">
+                            <i class="bi bi-tv f-40"></i>
+                            <h1>Screens</h1>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio
+                                aperiam
+                                aliquid architecto soluta voluptatum esse.</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 text-center">
+                    <div class="box">
+                        <a href=""><i class="bi bi-phone f-40">
+                            </i>
+                            <h1>Mobile</h1>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio
+                                aperiam
+                                aliquid architecto soluta voluptatum esse.</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="about-us" class="container-fluid pb-5">
+        <div class="row mx-5 pt-5">
+            <div class="col-md-6">
+                <img src="images/img-2.png" alt="" class="img-fluid">
+            </div>
+
+            <div class="col-md-6 d-flex flex-column justify-content-center text-center">
+                <h1>Best Accesories and Electronics</h1>
+                <p class="f-16 mt-5">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet deleniti
+                    aspernatur
+                    iste, tempora
+                    laborum accusantium maiores vitae labore fuga modi quisquam libero accusamus doloribus maxime,
+                    corrupti perferendis esse. Sunt culpa ab commodi, enim facilis maxime incidunt eaque libero
+                    necessitatibus blanditiis.</p>
+
+                <div class="row mt-5">
+                    <button class="btn btn-primary col-6">Read More...</button>
+                    <button class="btn btn-order col-6">Order Now!</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container-fluid py-5 bg-warning" id="message">
+        <div class="row d-flex flex-column align-items-center">
+
+            <div class="col-md-4 text-center">
+                <h1 class="fw-bold text-dark">Subscription</h1>
+                <div>
+                    <input id="full-name" type="text" placeholder="Ad & Soyad">
+                </div>
+                <div>
+                    <input type="email" id="email" placeholder="email@example.com">
+                </div>
+                <div>
+                    <input type="tel" id="tel" placeholder="5*********">
+                </div>
+                <div class="d-flex align-items-center mb-2">
+                    <input id="smsCheck" type="checkbox" class="cb-lg" checked onclick="checkSMS(); checkMailAndSMS()">
+                    <span class="ms-2">Tarafınızdan
+                        gelecek SMS'lere onay
+                        veriyorum.</span>
+                </div>
+
+                <div class="d-flex align-item-center">
+                    <input type="checkbox" id="mailCheck" class="cb-lg" checked
+                        onclick="checkMail(); checkMailAndSMS()">
+                    <span class="ms-2">Tarafınızdan
+                        gelecek Mail'lere onay
+                        veriyorum.</span>
+                </div>
+
+                <div class="d-flex align-items-center kvkk mt-2">
+                    <input type="checkbox" id="kvkkCheck" class="cb-lg" onclick="checkMailAndSMS();">
+                    <div class="ms-2"><a href="#">KVKK Açık Rıza Metni</a>'ni okudum onaylıyorum.</div>
+                </div>
+
+                <br>
+
+                <button id="contactButton" class="btn btn-contact btn-lg col-12" type="submit">Submit</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="product" class="container-fluid py-5">
+        <div class="row" id="product-main-row">
+            <div class="row text-center ">
+                <h1 class="text-light fw-bold " id="best-seller">Best sellers of categories!</h1>
+                <p class="mt-5 text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, ipsam
+                    fuga?
+                    Quam sed itaque, alias perferendis hic dolorem minus voluptas consequatur mollitia aliquid cumque
+                    porro.
+                    Ab dicta, id provident expedita nihil numquam maiores. Doloremque nam incidunt laborum quod
+                    aspernatur
+                    alias.</p>
+            </div>
+
+            <div class="row mt-5">
+                <div class="col-md-12">
+
+                    <div class="owl-carousel">
+                        <div class="item">
+                            <div class="d-flex align-item-center text-center flex-column bg-light">
+                                <a href="#">
+                                    <h2 class="product">Çanta-1</h2>
+                                    <h1 class="category">Accessories</h1>
+                                    <h1 class="price">$35.99</h1>
+                                    <h2>Month</h2>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, ullam!</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="d-flex align-item-center text-center flex-column bg-light">
+                                <a href="#">
+                                    <h2 class="product">Mobile-1</h2>
+                                    <h1 class="category">Accessories</h1>
+                                    <h1 class="price">$35.99</h1>
+                                    <h2>Month</h2>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, ullam!</p>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="d-flex align-item-center text-center flex-column bg-light">
+                                <a href="#">
+                                    <h2 class="product">Ekran-1</h2>
+                                    <h1 class="category">Accessories</h1>
+                                    <h1 class="price">$35.99</h1>
+                                    <h2>Month</h2>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, ullam!
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="contact" class="container-fluid pt-5">
+        <div class="row">
+            <div class="col-md-12 d-flex justify-content-center flex-column align-item-center text-center">
+                <h1 class="mb-5 fw-bolder f-64">Check our shops!</h1>
+                <div class="position-relative">
+                    <img src="images/input-bg.png" alt="" class="img-fluid">
+                    <div class="position-absolute top-50 start-50 translate-middle">
+                        <h1 class="text-light fw-bold mb-3">Find our closest shop</h1>
+                        <div class="position-relative pb-5">
+                            <input type="text" placeholder=" Enter your address" name="text">
+                            <button class="btn btn-find position-absolute">FIND</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="container-fluid">
+        <div class="row justify-content-around pt-3">
+            <div class="col-md-2 d-flex flex-column">
+                <div>
+                    <img src="images/television-icon.png" alt="">
+                    <p class="text-light pt-3   ">Copyrigth etc.</p>
+                    <p class="text-light">Address</p>
+                    <p class="text-light">Tel: +905XXXXXXXXX</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div>
+                    <h1>Let Us Help You</h1>
+                    <p class="f-16 py-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, ducimus
+                        iure
+                        consequatur vero
+                        non
+                        deleniti tenetur quaerat ut commodi! Iure quibusdam quae quaerat placeat architecto, nisi sunt!
+
+                    </p>
+                </div>
+
+            </div>
+            <div class="col-md-2">
+                <div>
+                    <h1>Menu</h1>
+                    <ul>
+                        <li><a id="nava1" href="#header">Home</a></li>
+                        <li><a id="nava2" href="#about-us">About</a></li>
+                        <li><a id="nava3" href="#product">Products</a></li>
+                        <li><a id="nava4" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="col-md-2 d-flex flex-column align-items-center justify-content-center">
+
+
+                <a href="#"><i class="bi bi-facebook f-40"></i></a>
+
+                <a href="#"><i class="bi bi-twitter f-40"></i></a>
+
+                <a href="#"><i class="bi bi-instagram f-40"></i></a>
+
+
+                <a href="#"><i class="bi bi-linkedin f-40"></i></a>
+
+
+
+
+            </div>
+        </div>
+        <div class="row" style="background-color: #575757;">
+            <div class="col-md-12 text-center">
+                <a class="text-danger" href="https://kvkk.gov.tr/yayinlar/A%C3%87IK%20RIZA.pdf" target="_blank">KVKK
+                    Açık Rıza Metni</a>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Ad soyad deneme -->
+    <script>
+        function checkSMS() {
+            var check = document.getElementById("smsCheck");
+            if (check.checked) {
+
+                document.getElementById("tel").classList.remove("d-none");
+
+            } else {
+                document.getElementById("tel").classList.add("d-none");
+            }
+        }
+
+        function checkMail() {
+            var checkEmail = document.getElementById("mailCheck");
+            if (checkEmail.checked) {
+                document.getElementById("email").classList.remove("d-none");
+            } else {
+                document.getElementById("email").classList.add("d-none");
+            }
+        }
+
+        function checkMailAndSMS() {
+            var checkEmail = document.getElementById("mailCheck");
+            var checkSMS = document.getElementById("smsCheck");
+            var checkKVKK = document.getElementById("kvkkCheck");
+            var submitButton = document.getElementById("contactButton");
+            if ((!checkEmail.checked && !checkSMS.checked) || !checkKVKK.checked) {
+                submitButton.classList.add("disabled");
+            } else {
+                submitButton.classList.remove("disabled");
+            }
+        }
+    </script>
+    <script>
+
+    </script>
+    <script>/* Set the width of the side navigation to 250px */
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "15%";
+        }
+
+        /* Set the width of the side navigation to 0 */
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
+
+    <!-- JQuery Min -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+        integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Owl Carousel -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+    <!-- Bootstrap And Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+        integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous">
+        </script>
+
+    <script>
+        var owl = $('.owl-carousel');
+        owl.owlCarousel({
+            margin: 10,
+            loop: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 2
+                },
+                1000: {
+                    items: 3
+                }
+            }
+        })
+    </script>
+
+</body>
+
+</html>

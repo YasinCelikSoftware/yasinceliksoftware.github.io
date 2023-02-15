@@ -1,0 +1,53 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    color: #000;
+}
+
+.bg-softpurple {
+    background-color: #EA8FEA;
+}
+
+.bg-turqoise {
+    background-color: #B9F3E4 !important;
+}
+
+.bg-darkyellow {
+    background-color: rgb(145, 145, 5) !important;
+}
+
+.bg-softyellow {
+    background: #F6E6C2;
+}
+
+.txt-darkyellow {
+    color: rgb(145, 145, 5) !important;
+}
+
+.f-12 {
+    font-size: 12px !important;
+}
+
+.f-14 {
+    font-size: 14px !important;
+}
+
+.f-16 {
+    font-size: 16px !important;
+}
+
+.f-24 {
+    font-size: 24px !important;
+}
+
+.f-32 {
+    font-size: 2vw;
+}
+
+.f-40 {
+    font-size: 2.5rem;
+}
+
+.f-64 {
+    font-size: 4vw;
+}
